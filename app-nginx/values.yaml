@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/martinb1987/jenkins-lab
+  tag: 14
+  pullPolicy: Always
+
+service:
+  name: nginx-service
+  type: ClusterIP
+  port: 80
+  targetPort: 80
